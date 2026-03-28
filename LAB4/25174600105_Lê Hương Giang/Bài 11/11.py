@@ -1,0 +1,16 @@
+n = int(input("Nhập số n: "))
+i = 1 # bắt đầu từ 1
+S1 = 0
+S2 = 0
+S3 = 0
+S4 = 0
+while i<=n:
+    S1 += 6**i
+    S2 += 1/3**(2*i+1)
+    S3 += (-1)**i *(i**2)
+    S4 += i*(i+1)*(i+2)
+    i += 1
+print("S1 =", S1)
+print("S2 =", S2)
+print("S3 =", S3)
+print("S4 =", S4)
