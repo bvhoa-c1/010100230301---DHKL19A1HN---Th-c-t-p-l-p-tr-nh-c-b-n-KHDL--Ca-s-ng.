@@ -1,0 +1,257 @@
+LAB1
+
+#bai1
+tong = 0
+for i in range(2000, 4001):
+    if i % 7 == 0 and i % 5 != 0:
+        tong += i
+print("Tổng:", tong)
+
+tong = 0
+for i in range(2000, 4001):
+    if i % 7 == 0 and i % 5 != 0:
+        tong += i
+print("Tổng:", tong)
+
+
+#bai2
+for i in range(1, 10):
+    for j in range(1, 11):
+        print(f"{i}x{j}={i*j}", end="\t")
+    print()
+
+
+#bài3
+n = int(input("Nhập số hàng: "))
+
+for i in range(1, n+1):
+    for j in range(1, i+1):
+        if j == 1 or j == i or i == n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+
+
+#bài4
+for i in range(1, 1001):
+    if int(i**0.5) ** 2 == i:
+        print(i, end=" ")
+
+
+#bài5
+for i in range(1, 1001):
+    if int(i**0.5) ** 2 == i:
+        print(i, end=" ")
+
+
+#bài6
+n = int(input("Nhập n: "))
+tong = 0
+for i in range(1, n+1):
+    tong += 1/i
+print("Tổng:", tong)
+
+
+#bài7
+n = int(input("Nhập n: "))
+dem = 0
+
+for i in range(1, n+1):
+    s = sum(int(d) for d in str(i))
+    if s % 2 == 0:
+        dem += 1
+
+print("Số lượng:", dem)
+
+
+#bài8
+n = int(input("Nhập n: "))
+max_sum = 0
+so_max = 0
+
+for i in range(1, n+1):
+    s = sum(int(d) for d in str(i))
+    if s > max_sum:
+        max_sum = s
+        so_max = i
+
+print("Số:", so_max)
+
+
+#bài9
+n = int(input("Nhập n: "))
+max_uoc = 0
+so_max = 0
+
+for i in range(1, n+1):
+    count = 0
+    for j in range(1, i+1):
+        if i % j == 0:
+            count += 1
+    if count > max_uoc:
+        max_uoc = count
+        so_max = i
+
+print("Số có nhiều ước nhất:", so_max)
+
+
+#bài11
+n = int(input("Nhập n: "))
+a, b = 0, 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+#bài12
+mapping = {
+    'A':10,'B':12,'C':13,'D':14,'E':15,'F':16,'G':17,'H':18,'I':19,'J':20,
+    'K':21,'L':23,'M':24,'N':25,'O':26,'P':27,'Q':28,'R':29,'S':30,'T':31,
+    'U':32,'V':34,'W':35,'X':36,'Y':37,'Z':38
+}
+
+code = input("Nhập mã container: ")
+tong = 0
+
+for i in range(len(code)):
+    if code[i].isalpha():
+        val = mapping[code[i]]
+    else:
+        val = int(code[i])
+    tong += val * (2 ** i)
+
+check = tong % 11
+if check == 10:
+    check = 0
+
+print("Check digit:", check)
+
+
+================================================================================================================================
+LAB2
+
+#1
+n = int(input("Nhập n: "))
+a, b = 0, 1
+i = 1
+
+while i < n:
+    a, b = b, a + b
+    i += 1
+
+print("Fibonacci thứ n:", a)
+
+
+#2
+while True:
+    pw = input("Nhập mật khẩu: ")
+    if pw == "123456":
+        print("Đúng!")
+        break
+
+#3
+n = int(input("Nhập n: "))
+i = n - 1
+
+while i > 0:
+    if n % i == 0:
+        print("Ước lớn nhất:", i)
+        break
+    i -= 1
+
+#4
+tong = 0
+dem = 0
+max_val = None
+
+while True:
+    x = int(input("Nhập số (0 để dừng): "))
+    if x == 0:
+        break
+    tong += x
+    dem += 1
+    if max_val is None or x > max_val:
+        max_val = x
+
+print("Tổng:", tong)
+print("Số lượng:", dem)
+print("Max:", max_val)
+
+#5
+n = input("Nhập số: ")
+if n == n[::-1]:
+    print("Đúng")
+else:
+    print("Sai")
+
+#6
+n = input("Nhập số: ")
+k = len(n)
+tong = 0
+
+for d in n:
+    tong += int(d) ** k
+
+if tong == int(n):
+    print("Là Armstrong")
+else:
+    print("Không phải")
+
+#7
+i = 2
+while i <= 9:
+    j = 1
+    while j <= 10:
+        print(f"{i}x{j}={i*j}", end="\t")
+        j += 1
+    print()
+    i += 1
+
+#8
+n = int(input("Nhập n: "))
+tong = 0
+tich = 1
+dao = 0
+
+while n > 0:
+    d = n % 10
+    tong += d
+    tich *= d
+    dao = dao * 10 + d
+    n //= 10
+
+print("Tổng:", tong)
+print("Tích:", tich)
+print("Đảo:", dao)
+
+#9
+while True:
+    print("1. Cộng\n2. Trừ\n3. Nhân\n4. Chia\n0. Thoát")
+    chon = int(input("Chọn: "))
+
+    if chon == 0:
+        break
+
+    a = float(input("a = "))
+    b = float(input("b = "))
+
+    if chon == 1:
+        print("KQ:", a + b)
+    elif chon == 2:
+        print("KQ:", a - b)
+    elif chon == 3:
+        print("KQ:", a * b)
+    elif chon == 4:
+        if b != 0:
+            print("KQ:", a / b)
+        else:
+            print("Không chia được")
+
+#10
+n = int(input("Nhập n: "))
+while n > 0:
+    print("*" * n)
+    n -= 1
+
+
