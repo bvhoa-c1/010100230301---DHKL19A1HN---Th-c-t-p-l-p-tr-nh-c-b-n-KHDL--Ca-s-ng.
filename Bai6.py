@@ -1,7 +1,11 @@
 n = int(input("Nhập n: "))
+temp = n
 tong = 0
-
-for i in range(1, n + 1):
-    tong += 1 / i
-
-print("Tổng S =", tong)
+while temp > 0:
+    so = temp % 10
+    tong += so ** 3
+    temp //= 10
+if tong == n:
+    print("Là số Armstrong")
+else:
+    print("Không phải")

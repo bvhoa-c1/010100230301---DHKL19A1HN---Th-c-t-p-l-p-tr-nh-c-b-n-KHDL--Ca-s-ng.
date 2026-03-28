@@ -1,14 +1,23 @@
-n = int(input("Nhập n: "))
-max_uoc = 0
-so_max = 0
+while True:
+    print("\n1. Cộng")
+    print("2. Trừ")
+    print("3. Nhân")
+    print("4. Chia")
+    print("0. Thoát")
+    chon = int(input("Chọn: "))
+    if chon == 0:
+        break
+    a = float(input("Nhập a: "))
+    b = float(input("Nhập b: "))
 
-for i in range(1, n + 1):
-    dem = 0
-    for j in range(1, i + 1):
-        if i % j == 0:
-            dem += 1
-    if dem > max_uoc:
-        max_uoc = dem
-        so_max = i
-
-print("Số có nhiều ước nhất:", so_max)
+    if chon == 1:
+        print("KQ:", a + b)
+    elif chon == 2:
+        print("KQ:", a - b)
+    elif chon == 3:
+        print("KQ:", a * b)
+    elif chon == 4:
+        if b != 0:
+            print("KQ:", a / b)
+        else:
+            print("Không chia được")

@@ -1,15 +1,14 @@
 n = int(input("Nhập n: "))
-max_tong = 0
-so_max = 0
-
-for i in range(1, n + 1):
-    tong = 0
-    temp = i
-    while temp > 0:
-        tong += temp % 10
-        temp //= 10
-    if tong > max_tong:
-        max_tong = tong
-        so_max = i
-
-print("Số cần tìm:", so_max)
+temp = n
+tong = 0
+tich = 1
+dao = 0
+while temp > 0:
+    so = temp % 10
+    tong += so
+    tich *= so
+    dao = dao * 10 + so
+    temp //= 10
+print("Tổng:", tong)
+print("Tích:", tich)
+print("Số đảo:", dao)
