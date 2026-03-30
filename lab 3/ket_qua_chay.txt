@@ -1,0 +1,59 @@
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai1.py"
+Tổng = 686287
+Tổng = 63000
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai2.py"
+1x1=1   1x2=2   1x3=3   1x4=4   1x5=5   1x6=6   1x7=7   1x8=8   1x9=9
+2x1=2   2x2=4   2x3=6   2x4=8   2x5=10  2x6=12  2x7=14  2x8=16  2x9=18
+3x1=3   3x2=6   3x3=9   3x4=12  3x5=15  3x6=18  3x7=21  3x8=24  3x9=27
+4x1=4   4x2=8   4x3=12  4x4=16  4x5=20  4x6=24  4x7=28  4x8=32  4x9=36
+5x1=5   5x2=10  5x3=15  5x4=20  5x5=25  5x6=30  5x7=35  5x8=40  5x9=45
+6x1=6   6x2=12  6x3=18  6x4=24  6x5=30  6x6=36  6x7=42  6x8=48  6x9=54
+7x1=7   7x2=14  7x3=21  7x4=28  7x5=35  7x6=42  7x7=49  7x8=56  7x9=63
+8x1=8   8x2=16  8x3=24  8x4=32  8x5=40  8x6=48  8x7=56  8x8=64  8x9=72
+9x1=9   9x2=18  9x3=27  9x4=36  9x5=45  9x6=54  9x7=63  9x8=72  9x9=81
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai3.py"
+Nhập n: 4
+* 
+* *
+*   *
+* * * *
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai4.py"
+Nhập n: 3
+S1 = 6
+S2 = 1.8333333333333333
+S3 = 1.6153550716504106
+S4 = 0.8333333333333333
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai5.py"
+1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai6.py"
+Nhập n: 10
+S = 2.9289682539682538
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai7.py"
+Nhập n: 15
+Số lượng = 7
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai8.py"
+Nhập n: 10
+Số có tổng chữ số lớn nhất là 9 (Tổng = 9)
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai9.py"
+Nhập n: 30
+Số có nhiều ước nhất: 24
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai11.py"
+Bạn muốn in bao nhiêu số Fibonacci? 10
+10 số Fibonacci đầu tiên là:
+0 1 1 2 3 5 8 13 21 34
+PS D:\lab 3> & "C:/Users/MSI của Vũ/.local/bin/python3.14.exe" "d:/lab 3/bai12.py"
+Nhập chuỗi 10 ký tự mã container: ABCLSXYZEO
+w0 = 10 x 2^0 = 10
+w1 = 12 x 2^1 = 24
+w2 = 13 x 2^2 = 52
+w3 = 23 x 2^3 = 184
+w4 = 30 x 2^4 = 480
+w5 = 36 x 2^5 = 1152
+w6 = 37 x 2^6 = 2368
+w7 = 38 x 2^7 = 4864
+w8 = 15 x 2^8 = 3840
+w9 = 26 x 2^9 = 13312
+
+Tổng các trọng số: 26286
+Số kiểm tra = 26286 : 11 dư 7
+Vậy số kiểm tra của mã container ABCLSXYZEO là 7.
