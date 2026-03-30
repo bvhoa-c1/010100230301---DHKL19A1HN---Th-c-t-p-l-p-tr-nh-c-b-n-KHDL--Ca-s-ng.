@@ -1,0 +1,17 @@
+def gia_tri_ky_tu(c):
+    if c.isdigit():
+        return int(c)
+    return ord(c) - ord('A') + 10
+
+container = input("Nhập container: ").strip()
+
+tong = 0
+for i in range(len(container)):
+    value = gia_tri_ky_tu(container[i])
+    tong += value * (2 ** i)
+
+check_digit = tong % 11
+if check_digit == 10:
+    check_digit = 0
+
+print("Số kiểm tra:", check_digit)
