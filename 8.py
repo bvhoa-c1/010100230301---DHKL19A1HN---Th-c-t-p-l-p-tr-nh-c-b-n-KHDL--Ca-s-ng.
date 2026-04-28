@@ -1,13 +1,20 @@
 n = int(input())
-if n <= 0:
-    exit()
-so_sum_max = 0
+a = n
+dao = 0
 tong = 0
+tich = 1
+while n != 0:
+    cac_so = n % 10
+    print(cac_so , end=(" "))
+    tich *= cac_so
+    tong += cac_so
+    n //= 10
+while a != 0:
+    dao = dao * 10 + a % 10
+    a //= 10
 
-for i in range(1, n + 1):
-    s = sum(int(d) for d in str(i))
-    if s > tong:
-        tong = s
-        so_sum_max = i
+print("\ntích các số ", tich)
+print("tong cac so", tong)
+print("so dao " , dao)
 
-print("so co tong lon nhat", so_sum_max)
+

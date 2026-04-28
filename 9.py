@@ -1,12 +1,25 @@
-n = int(input())
-uoc_max = 0
-so_uoc_max = 0
-for i in range(1,  n +1):
-    dem_uoc = 0
-    for j in range(1 , i + 1):
-        if i % j == 0:
-            dem_uoc += 1
-    if dem_uoc > uoc_max:
-        uoc_max = dem_uoc
-        so_uoc_max = i
-print("so co nhieu uoc nhat :", so_uoc_max , "co", uoc_max, "uoc")
+print("CHƯƠNG TRÌNH TÍNH CỘNG , TRỪ , NHÂN , CHIA")
+while True:
+    print("1 Thực hiện phép cộng")
+    print("2 Thực hiện phép trừ")
+    print("3 Thực hiện phép nhân")
+    print("4 Thực hiện phép chia")
+    print("0 Thoát")
+    choice = int(input("Chọc chức năng bổ trợ: "))
+    if choice == 1:
+        print("Bạn đã chọn phép cộng")
+        break
+    elif choice == 2:
+        print("bạn đã chọn phép trừ")
+        break
+    elif choice == 3:
+        print("Bạn đã chọn phép nhân")
+        break
+    elif choice == 4:
+        print("Bạn đã chọn phép chia")
+        break
+    elif choice == 0:
+        print("Thoát")
+        break
+    else:
+        print("Vui lòng chọn mục hợp lệ")
