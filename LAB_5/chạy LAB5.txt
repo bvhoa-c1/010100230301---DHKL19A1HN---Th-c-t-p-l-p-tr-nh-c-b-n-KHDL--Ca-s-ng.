@@ -1,0 +1,34 @@
+PS C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code> & C:\Users\Admin\AppData\Local\Programs\Python\Python314\python.exe "d:/DESKTOP/25174600231_Trần Đức Quảng_LAB5/LAB5_TRẦN ĐỨC QUẢNG.py"
+nhập số nguyên dương: 56
+nhi phan :  1.01.01.00.00.00.0
+nhập str1 : okioki
+nhập str2: thank You
+chuỗi con chung ngắn nhất:  o
+Nhập chuỗi: xin chào mọi người        
+Nhập từ cần tìm: mọi
+Vị trí đầu tiên của 'mọi' là: 9
+Từ xuất hiện nhiều nhất là: xin
+Nhập xâu: 1233
+Số sau khi lọc: 1233. Là số nguyên tố: False
+Chuỗi 1: 12321864234
+Chuỗi 2: 73612613
+Kết quả trộn: 1-7-2-3-3-6-2-1-1-2-8-6-6-1-4-3
+Nhập xâu: xin chao 12 3
+Hoa: 0, Thường: 7, Số: 3, Đặc biệt: 3
+Tỷ lệ ký tự đặc biệt: 23.076923076923077%
+Nhập xâu (>10 ký tự): what do you do ?
+Từ vị trí 2 đến 8: at do y
+5 ký tự từ vị trí 5: do yo
+3 ký tự cuối: o ?
+Viết hoa: WHAT DO YOU DO ?
+Viết thường: what do you do ?
+Đảo ngược: ? od uoy od tahw
+Chuỗi gốc: kuwakuwwa
+Chuỗi đích: jewfdfa
+Ước lượng cần ít nhất 8 thao tác.
+Chuỗi gốc: djhgfwegfywgefyw
+Chuỗi đích: gwlegfywefyrfyg
+Ước lượng cần ít nhất 16 thao tác.
+Nhập xâu có khoảng trắng: hello welcom
+Kết quả: hellowelcom
+PS C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code> 
