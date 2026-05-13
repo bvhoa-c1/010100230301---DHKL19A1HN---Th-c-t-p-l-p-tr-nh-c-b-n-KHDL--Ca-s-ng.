@@ -1,0 +1,17 @@
+PS C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code> & C:\Users\Admin\AppData\Local\Programs\Python\Python314\python.exe "d:/DESKTOP/25174600231_Trần Đức Quảng_LAB7/LAB7_Trần Đức Quảng.py"
+Nhập số N: 8
+Từ điển tạo được: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+Xếp loại từng bạn: {'An': 'A', 'Bình': 'C', 'Chi': 'D', 'Dũng': 'A'}
+Thống kê số lượng theo loại: {'A': 2, 'C': 1, 'D': 1}
+Số lần xuất hiện: {'python': 2, 'is': 2, 'easy': 1, 'fun': 1}
+Từ nhiều nhất: 'python', Từ ít nhất: 'easy'
+Hành trang sau khi cập nhật:
+{'vang': 550, 'tui_nho': ['da_lua', 'day_thung', 'da_quy'], 'ba_lo': ['dan_go', 'o_banh_mi', 'tui_ngu'], 'tui_quan': ['vo_oc', 'qua_mong_la', 'xo_vai']}
+--- HÓA ĐƠN ---
+apple: 2$ (Còn lại: 10)
+banana: 4$ (Còn lại: 6)
+orange: 1.5$ (Còn lại: 32)
+Tổng cộng: 7.5$
+Kho sau khi bán: {'apple': 9, 'banana': 5, 'orange': 31}
+Các mặt hàng còn trong kho chưa ai mua: {'tulanh', 'dieuhoa'}
+PS C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code> 

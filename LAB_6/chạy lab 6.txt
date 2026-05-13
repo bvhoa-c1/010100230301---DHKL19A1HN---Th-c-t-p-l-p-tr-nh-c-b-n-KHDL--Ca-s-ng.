@@ -1,0 +1,30 @@
+PS C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code> & C:\Users\Admin\AppData\Local\Programs\Python\Python314\python.exe "d:/DESKTOP/25174600231_Trần Đức Quảng_LAB6/LAB6_TRẦN ĐỨC QUẢNG.py"
+Nhập số lượng phần tử: 5
+Nhập số thứ 1: 1
+Nhập số thứ 2: 2
+Nhập số thứ 3: 3
+Nhập số thứ 4: 4
+Nhập số thứ 5: 5
+Tổng các số chẵn: 6
+Tổng các số lẻ: 9
+Các số nguyên tố: [2, 3, 5]
+Các số hoàn hảo: []
+Giá trị lớn nhất: 10
+Giá trị nhỏ nhất: 0
+Nhập n: 6
+6 số hạng đầu tiên của Fibonacci: [0, 1, 1, 2, 3, 5]
+Số nguyên tố < 100: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+Đây là cấp số cộng.
+Tổng ma trận: 21
+Tích hai ma trận: [[19, 22], [43, 50]]
+Ma trận chuyển vị: [[1, 2], [2, 1]]
+Đây là ma trận đối xứng.
+Nhập các phần tử cho ma trận A (2x2):
+Nhập a: 10
+Nhập b: 9
+Nhập c: 8
+Nhập d: 7
+--- Ma trận nghịch đảo là ---
+[-3.5, 4.5]
+[4.0, -5.0]
+PS C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code> 
