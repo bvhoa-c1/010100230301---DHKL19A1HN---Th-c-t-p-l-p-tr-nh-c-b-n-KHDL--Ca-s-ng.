@@ -1,0 +1,51 @@
+Nhap n: 8
+So Fibonacci thu 8 la: 13
+Nhap mat khau: 123456
+Dang nhap thanh cong
+Nhap n: 6
+Uoc lon nhat: 3
+Nhap so: 6     
+Nhap so: 7
+Nhap so: 8
+Nhap so: 9
+Nhap so: 0
+Tong: 30      
+So luong: 4   
+So lon nhat: 9
+Nhap n: 9     
+La so doi xung
+nhập n:7      
+ là số amstrong
+2 x 1 = 2      
+
+3 x 2 = 6      
+
+4 x 3 = 12     
+
+5 x 4 = 20     
+
+6 x 5 = 30     
+
+7 x 6 = 42     
+
+8 x 7 = 56     
+
+9 x 8 = 72     
+
+10 x 9 = 90    
+
+11 x 10 = 110  
+
+ nhập n:9      
+Tong: 9
+Tich: 9
+So dao: 9
+1. Cong
+2. Tru
+3. Nhan
+4. Chia
+0. Thoat
+Chon: 3
+Nhap a: 5
+Nhap b: 6
+30.0
