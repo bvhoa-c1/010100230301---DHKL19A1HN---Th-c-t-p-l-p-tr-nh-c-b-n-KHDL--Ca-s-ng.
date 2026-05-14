@@ -1,0 +1,561 @@
+#LAB5
+
+
+#5.1:
+n = int(input("Nhap so nguyen duong: "))
+
+binary = bin(n)[2:]
+
+print("Dang nhi phan:", binary)
+#5.2
+str1 = input("Nhap chuoi 1: ")
+str2 = input("Nhap chuoi 2: ")
+
+common = ""
+
+for i in range(len(str1)):
+    for j in range(i + 1, len(str1) + 1):
+        sub = str1[i:j]
+        if sub in str2:
+            if common == "" or len(sub) < len(common):
+                common = sub
+
+if common:
+    print("Chuoi con chung ngan nhat:", common)
+else:
+    print("Khong co chuoi con chung")
+
+#5.3
+text = input("Nhap chuoi van ban: ")
+keyword = input("Nhap tu khoa: ")
+
+words = text.split()
+
+print("Vi tri xuat hien cua tu khoa:")
+for i, word in enumerate(words):
+    if word == keyword:
+        print(i)
+
+freq = {}
+for word in words:
+    freq[word] = freq.get(word, 0) + 1
+
+max_word = max(freq, key=freq.get)
+
+print("Tu xuat hien nhieu nhat:", max_word)
+print("So lan:", freq[max_word])
+#5.4
+s = input("Nhap chuoi: ")
+
+digits = ""
+
+for c in s:
+    if c.isdigit():
+        digits += c
+
+num = int(digits)
+
+print("So sau khi tach:", num)
+
+is_prime = True
+
+if num < 2:
+    is_prime = False
+else:
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+
+if is_prime:
+    print("La so nguyen to")
+else:
+    print("Khong phai so nguyen to")
+#5.5
+s1 = input("Nhap chuoi 1: ")
+s2 = input("Nhap chuoi 2: ")
+
+result = []
+
+length = max(len(s1), len(s2))
+
+for i in range(length):
+    if i < len(s1):
+        result.append(s1[i])
+
+    if i < len(s2):
+        result.append(s2[i])
+
+print("-".join(result))
+#5.6
+s = input("Nhap chuoi: ")
+
+special = {}
+
+for c in s:
+    if not c.isalnum() and c != " ":
+        special[c] = special.get(c, 0) + 1
+
+print("Thong ke ky tu dac biet:")
+
+for k, v in special.items():
+    percent = (v / len(s)) * 100
+    print(k, ":", v, "lan -", round(percent, 2), "%")
+#5.7
+s = input("Nhap chuoi: ")
+
+lower = upper = digit = special = 0
+
+for c in s:
+    if c.islower():
+        lower += 1
+    elif c.isupper():
+        upper += 1
+    elif c.isdigit():
+        digit += 1
+    else:
+        special += 1
+
+print("Chu thuong:", lower)
+print("Chu hoa:", upper)
+print("Chu so:", digit)
+print("Ky tu dac biet:", special)
+#5.8
+s = input("Nhap chuoi (>10 ky tu): ")
+
+if len(s) > 10:
+    print("Tu vi tri 2 den 8:", s[2:9])
+    print("5 ky tu tu vi tri 5:", s[5:10])
+    print("3 ky tu cuoi:", s[-3:])
+    print("Chu hoa:", s.upper())
+    print("Chu thuong:", s.lower())
+    print("Dao nguoc:", s[::-1])
+else:
+    print("Chuoi khong du do dai")
+#5.9
+s1 = input("Nhap chuoi ban dau: ")
+s2 = input("Nhap chuoi muc tieu: ")
+
+if s1 == s2:
+    print("Hai chuoi giong nhau")
+else:
+    print("Co the chuyen doi bang them/xoa/thay the ky tu")
+#5.10
+s = input("Nhap chuoi: ")
+
+result = s.replace(" ", "")
+
+print("Chuoi sau khi xu ly:", result)
+
+
+#LAB6
+
+
+#6.1
+n = int(input("Nhap so phan tu: "))
+
+arr = []
+
+for i in range(n):
+    arr.append(int(input()))
+
+even_sum = 0
+odd_sum = 0
+
+for x in arr:
+    if x % 2 == 0:
+        even_sum += x
+    else:
+        odd_sum += x
+
+print("Tong chan:", even_sum)
+print("Tong le:", odd_sum)
+#6.2
+arr = list(map(float, input("Nhap day so: ").split()))
+
+print("Max =", max(arr))
+print("Min =", min(arr))
+#6.3
+arr = list(map(float, input("Nhap day so: ").split()))
+
+print("Max =", max(arr))
+print("Min =", min(arr))
+#6.4
+n = int(input("Nhap n: "))
+
+fib = [0, 1]
+
+[fib.append(fib[-1] + fib[-2]) for _ in range(n - 2)]
+
+print(fib[:n])
+#6.5
+primes = [x for x in range(2, 100)
+          if all(x % i != 0 for i in range(2, int(x**0.5) + 1))]
+
+print(primes)
+#6.6
+arr = list(map(int, input("Nhap day so: ").split()))
+
+diff = arr[1] - arr[0]
+
+check = True
+
+for i in range(1, len(arr) - 1):
+    if arr[i + 1] - arr[i] != diff:
+        check = False
+        break
+
+if check:
+    print("La cap so cong")
+else:
+    print("Khong phai cap so cong")
+#6,7
+m = int(input("Nhap so dong: "))
+n = int(input("Nhap so cot: "))
+
+matrix = []
+
+for i in range(m):
+    row = list(map(int, input().split()))
+    matrix.append(row)
+
+total = 0
+
+for row in matrix:
+    total += sum(row)
+
+print("Tong ma tran:", total)
+#6.8
+A = [[1, 2], [3, 4]]
+B = [[5, 6], [7, 8]]
+
+result = [[0, 0], [0, 0]]
+
+for i in range(2):
+    for j in range(2):
+        for k in range(2):
+            result[i][j] += A[i][k] * B[k][j]
+
+print(result)
+#6.9
+matrix = [
+    [1, 2],
+    [2, 1]
+]
+
+transpose = []
+
+for i in range(len(matrix[0])):
+    row = []
+    for j in range(len(matrix)):
+        row.append(matrix[j][i])
+    transpose.append(row)
+
+print("Chuyen vi:")
+for row in transpose:
+    print(row)
+
+if matrix == transpose:
+    print("Ma tran doi xung")
+else:
+    print("Khong doi xung")
+#6.10
+import numpy as np
+
+A = np.array([[1, 2], [3, 4]])
+
+if np.linalg.det(A) != 0:
+    inv = np.linalg.inv(A)
+    print(inv)
+else:
+    print("Ma tran khong kha nghich")
+
+
+#LAB7
+
+
+#7.1
+n = int(input("Nhap N: "))
+
+d = {}
+
+for x in range(1, n + 1):
+    d[x] = x ** 3
+
+print(d)
+#7.2
+n = int(input("Nhap so sinh vien: "))
+
+students = {}
+
+for i in range(n):
+    name = input("Nhap ten: ")
+    score = float(input("Nhap diem: "))
+    students[name] = score
+
+grades = {}
+
+for name, score in students.items():
+    if score >= 8.5:
+        grades[name] = "A"
+    elif score >= 7:
+        grades[name] = "B"
+    elif score >= 5.5:
+        grades[name] = "C"
+    elif score >= 4:
+        grades[name] = "D"
+    else:
+        grades[name] = "F"
+
+print(grades)
+#7.3
+grades = {
+    "An": "A",
+    "Binh": "B",
+    "Cuong": "A",
+    "Dung": "C"
+}
+
+count = {}
+
+for grade in grades.values():
+    count[grade] = count.get(grade, 0) + 1
+
+print(count)
+#7.4
+text = input("Nhap doan van: ")
+
+text = text.lower()
+
+for c in ",.!?;:":
+    text = text.replace(c, "")
+
+words = text.split()
+
+freq = {}
+
+for word in words:
+    freq[word] = freq.get(word, 0) + 1
+
+print(freq)
+#7.5
+text = input("Nhap doan van: ")
+
+words = text.split()
+
+freq = {}
+
+for word in words:
+    freq[word] = freq.get(word, 0) + 1
+
+max_word = max(freq, key=freq.get)
+min_word = min(freq, key=freq.get)
+
+print("Tu nhieu nhat:", max_word, "-", freq[max_word], "lan")
+print("Tu it nhat:", min_word, "-", freq[min_word], "lan")
+#7.6
+inventory = {
+    "gold": 500,
+    "pouch": ["flint", "twine", "gemstone"],
+    "backpack": ["xylophone", "dagger", "bedroll", "bread loaf"]
+}
+
+inventory["pocket"] = ["seashell", "strange berry"]
+
+inventory["gold"] += 50
+
+print(inventory)
+#7.7
+inventory = {
+    "backpack": ["xylophone", "dagger", "bedroll", "bread loaf"]
+}
+
+inventory["backpack"].sort()
+
+inventory["backpack"].remove("dagger")
+
+print(inventory["backpack"])
+#7.8
+quantity = {
+    "apple": 3,
+    "banana": 5,
+    "orange": 2
+}
+
+price = {
+    "apple": 10000,
+    "banana": 5000,
+    "orange": 8000
+}
+
+total = 0
+
+print("HOA DON")
+
+for item in quantity:
+    cost = quantity[item] * price[item]
+    total += cost
+
+    print(item, "-", quantity[item], "-", cost)
+
+print("Tong tien:", total)
+#7.9
+inventory = {
+    "apple": 10,
+    "banana": 8,
+    "orange": 5
+}
+
+sold = {
+    "apple": 3,
+    "banana": 2
+}
+
+for item in sold:
+    if item in inventory:
+        inventory[item] -= sold[item]
+
+print("Ton kho moi:")
+print(inventory)
+#7.10
+warehouse = {"apple", "banana", "orange", "milk"}
+customer = {"banana", "milk"}
+
+not_bought = warehouse - customer
+
+print("San pham chua mua:")
+print(not_bought)
+
+
+#LAB8
+
+
+#8.1
+def is_prime(n):
+    if n < 2:
+        return False
+
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+
+    return True
+
+for i in range(2, 1000):
+    if is_prime(i) and is_prime(i + 2):
+        print((i, i + 2))
+#8.2
+def factorial(n):
+    result = 1
+
+    for i in range(1, n + 1):
+        result *= i
+
+    return result
+
+n = int(input("Nhap n: "))
+
+print("Giai thua =", factorial(n))
+#8.3
+def factorial(n):
+    result = 1
+
+    for i in range(1, n + 1):
+        result *= i
+
+    return result
+
+def permutation(n, r):
+    return factorial(n) // factorial(n - r)
+
+def combination(n, r):
+    return factorial(n) // (factorial(r) * factorial(n - r))
+
+n = int(input("Nhap n: "))
+r = int(input("Nhap r: "))
+
+print("Hoan vi =", permutation(n, r))
+print("To hop =", combination(n, r))
+#8.4
+def cubesum(n):
+    total = 0
+
+    for digit in str(n):
+        total += int(digit) ** 3
+
+    return total
+
+n = int(input("Nhap n: "))
+
+print(cubesum(n))
+#8.5
+def cubesum(n):
+    total = 0
+
+    for digit in str(n):
+        total += int(digit) ** 3
+
+    return total
+
+def isArmstrong(n):
+    return cubesum(n) == n
+
+for i in range(1000):
+    if isArmstrong(i):
+        print(i)
+#8.6
+def sumPdivisors(n):
+    total = 0
+
+    for i in range(1, n):
+        if n % i == 0:
+            total += i
+
+    return total
+
+n = int(input("Nhap n: "))
+
+print(sumPdivisors(n))
+#8.7
+def sumPdivisors(n):
+    total = 0
+
+    for i in range(1, n):
+        if n % i == 0:
+            total += i
+
+    return total
+
+def isAmicable(a, b):
+    return sumPdivisors(a) == b and sumPdivisors(b) == a
+
+a = int(input("Nhap a: "))
+b = int(input("Nhap b: "))
+
+if isAmicable(a, b):
+    print("La cap so Amicable")
+else:
+    print("Khong phai")
+#8.8
+arr = list(map(int, input("Nhap day so: ").split()))
+
+even = list(filter(lambda x: x % 2 == 0, arr))
+odd = list(filter(lambda x: x % 2 != 0, arr))
+
+print("So chan:", even)
+print("So le:", odd)
+#8.9
+arr = list(map(int, input("Nhap day so: ").split()))
+
+cube = list(map(lambda x: x ** 3, arr))
+
+print(cube)
+#8.10
+arr = list(map(int, input("Nhap day so: ").split()))
+
+result = list(map(
+    lambda x: x ** 3 if x % 2 == 0 else x ** 2,
+    arr
+))
+
+print(result)
